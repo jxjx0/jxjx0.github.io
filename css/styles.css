@@ -1,18 +1,18 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark gray text */
     line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(to right, #4a90e2, #50c9c3);
-    color: white;
+    background: #e0e0e0; /* Solid light gray */
+    color: #000; /* Black text */
     padding: 20px;
     text-align: center;
     position: relative;
-    z-index: 10; /* Ensures header stays above other elements */
+    z-index: 10;
 }
 
 header h1 {
@@ -21,8 +21,8 @@ header h1 {
 }
 
 nav ul {
-    list-style: none; /* Remove default bullets */
-    padding-left: 0; /* No indentation */
+    list-style: none;
+    padding-left: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -30,22 +30,22 @@ nav ul {
 }
 
 nav ul li::before {
-    content: "•"; /* Custom bullet */
-    color: #fff;
+    content: "•";
+    color: #666; /* Muted gray bullet */
     font-size: 1.2em;
     margin-right: 8px;
     display: inline-block;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none; /* Remove underline */
+    color: #000; /* Black links */
+    text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffeb3b; /* Hover effect */
+    color: #ccc; /* Light gray hover */
 }
 
 main {
@@ -59,37 +59,36 @@ section {
 }
 
 h2 {
-    color: #4a90e2;
+    color: #444; /* Darker gray for headings */
     text-align: center;
     font-size: 1.8em;
 }
 
 .bio-box {
-    background: white;
-    border: 2px solid #4a90e2;
+    background: #ffffff; /* White box */
+    border: 2px solid #666; /* Muted gray border */
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: center; /* Vertically center content */
+    align-items: center;
     gap: 20px;
     position: relative;
-    z-index: 5; /* Bio box below header but above video */
+    z-index: 5;
 }
 
 .profile-pic {
-    aspect-ratio: 1 / 1; 
+    aspect-ratio: 1 / 1;
     width: 200px;
     object-fit: cover;
     border-radius: 50%;
- 
 }
 
 .video-container {
     display: flex;
-    justify-content: center; /* Center video horizontally */
+    justify-content: center;
     position: relative;
-    z-index: 2; /* Video below bio box */
+    z-index: 2;
 }
 
 iframe {
@@ -98,14 +97,14 @@ iframe {
 }
 
 #contact ul {
-    list-style: none; /* Remove default bullets */
-    padding-left: 0; /* No indentation */
+    list-style: none;
+    padding-left: 0;
     text-align: center;
 }
 
 #contact ul li::before {
-    content: "→"; /* Custom arrow bullet */
-    color: #4a90e2;
+    content: "→";
+    color: #666; /* Muted gray arrow */
     font-size: 1.2em;
     margin-right: 10px;
     display: inline-block;
@@ -113,23 +112,23 @@ iframe {
 
 #contact ul li a {
     display: inline-flex;
-    align-items: center; /* Vertically center text */
-    text-decoration: none; /* Remove underline */
-    color: #4a90e2;
+    align-items: center;
+    text-decoration: none;
+    color: #444; /* Dark gray links */
     font-weight: bold;
     padding: 8px 12px;
     transition: background 0.3s ease;
 }
 
 #contact ul li a:hover {
-    background: #4a90e2;
-    color: white;
+    background: #e0e0e0; /* Light gray hover */
+    color: #000;
     border-radius: 5px;
 }
 
 footer {
-    background: #333;
-    color: white;
+    background: #333; /* Dark gray footer */
+    color: #fff; /* White text */
     text-align: center;
     padding: 10px;
     position: relative;
@@ -143,10 +142,9 @@ footer {
     text-align: center;
 }
 
-
 .folder-list ul li::before {
-    content: "📁"; /* Folder emoji as bullet */
-    color: #50c9c3;
+    content: "📁";
+    color: #666; /* Muted gray folder */
     font-size: 1.2em;
     margin-right: 10px;
     display: inline-block;
@@ -157,22 +155,22 @@ footer {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #4a90e2;
+    color: #444;
     font-weight: bold;
     padding: 10px;
-    background: white;
-    border: 1px solid #4a90e2;
+    background: #ffffff;
+    border: 1px solid #666;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 .folder-list ul li a:hover {
-    background: #4a90e2;
-    color: white;
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    background: #e0e0e0;
+    color: #000;
+    transform: scale(1.05);
 }
 
-#sub ul li::before{
-    
-    content: "📄" ;
+#sub ul li::before {
+    content: "📄";
+    color: #666; /* Muted gray file */
 }
