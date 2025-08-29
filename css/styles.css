@@ -136,3 +136,43 @@ footer {
     z-index: 10;
     margin-top: 20px;
 }
+
+.folder-list ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+
+.folder-list ul li::before {
+    content: "📁"; /* Folder emoji as bullet */
+    color: #50c9c3;
+    font-size: 1.2em;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.folder-list ul li a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+    padding: 10px;
+    background: white;
+    border: 1px solid #4a90e2;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.folder-list ul li a:hover {
+    background: #4a90e2;
+    color: white;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#sub ul li::before{
+    
+    content: "📄" ;
+}
